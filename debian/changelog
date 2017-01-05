@@ -1,3 +1,12 @@
+grub2 (2.02~beta2-36ubuntu3.6-galliumos1) xenon; urgency=medium
+
+  * in postinstall, offer to install GRUB to disk devices only
+    - do not offer to install to partition devices, to avoid
+      a avoid common user error which causes boot failures
+    - rare configurations might require manual GRUB update
+
+ -- reynhout <reynhout@galliumos.org>  Thu, 05 Jan 2017 18:07:47 +0000
+
 grub2 (2.02~beta2-36ubuntu3.6) xenial; urgency=medium
 
   * Fix support for IPv6 PXE booting under UEFI: (LP: #1229458)

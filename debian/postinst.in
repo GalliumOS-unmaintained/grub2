@@ -257,6 +257,7 @@ describe_partition()
 
 usable_partitions()
 {
+  return
   local last_partition path partition partition_id
 
   last_partition=
